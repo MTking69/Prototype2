@@ -1,0 +1,251 @@
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сонячні електростанції</title>
+
+<style>
+:root {
+    --accent: #f59e0b;
+    
+  
+    --light-bg: #f9fafb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background: white;
+    color: var(--dark);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== HERO ===== */
+header {
+    padding: 120px 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #fff, #f3f4f6);
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+header p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: var(--gray);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 15px 30px;
+    background: #0a2540;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: #385485;
+}
+
+/* ===== SECTIONS ===== */
+section {
+    padding: 100px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+/* ===== CARDS ===== */
+.cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: var(--light-bg);
+    padding: 40px;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* ===== REVIEWS ===== */
+.review {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: var(--light-bg);
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: 0.4s;
+}
+
+.review:hover {
+    transform: scale(1.02);
+}
+
+.review img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #ddd;
+}
+
+/* ===== CONTACT ===== */
+.contact-box {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 40px;
+    color: var(--gray);
+}
+
+/* ===== SCROLL ANIMATION ===== */
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .review {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .review img {
+        margin-bottom: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+  
+
+
+<header class="hidden">
+
+    <img src="https://ru.zgsm-china.com/wp-content/uploads/2022/04/solar-power-1024x576.jpg" class="bg-image">
+
+    <h1>Сонячні електростанції під ключ</h1>
+    <p>Економія до 70% на електроенергії</p>
+    <a href="" class="btn">Замовити</a>
+
+</header>
+
+<section class="hidden">
+    <h2>Наші рішення</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Для дому</h3>
+            <p>Інвертор, батарея або все разом к вам в приватні будинкі(кількість кВт обираєте ви)</p>
+        </div>
+      <div class="card">
+            <h3>Для Квартир</h3>
+            <p>Інвертор, батарея або все разом к вам в квартиру (кількість кВт обираєте ви)</p>
+        </div>
+      <div class="card">
+        <h3>Для комерційних приміщень</h3>
+        <p>Інвертор, батарея або все разом к вам в магазин, офіс, тощо(кількість кВт обираєте ви)</p>
+      </div>
+    </div>
+</section>
+
+<section class="hidden">
+    <h2>Відгуки клієнтів</h2>
+
+    <div class="review">
+        <img src="photo1.jpg" alt="Клієнт 1">
+        <div>
+            ⭐⭐⭐⭐⭐
+            <p>Встановили станцію за 1 днів. Працює без проблем, рахунки значно зменшились.</p>
+            <strong>— Олександр, </strong>
+        </div>
+    </div>
+
+    <div class="review">
+        <!-- ВСТАВ СВОЄ ФОТО ЗАМІСТЬ photo2.jpg -->
+        <img src="photo2.jpg" alt="Клієнт 2">
+        <div>
+            ⭐⭐⭐⭐⭐
+            <p>Професійний підхід, допомогли з документами та підключенням.</p>
+            <strong>— Ірина, Львів</strong>
+        </div>
+    </div>
+
+</section>
+
+<section id="contact" class="hidden">
+    <h2>Контакти</h2>
+    <div class="contact-box">
+        📞 +380 67 300 7759 <br><br>
+        📧 dmitriykobzar82@gmail.com <br><br>
+        <a href="#" class="btn">Замовити консультацію</a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Solar Energy | Всі права захищені
+</footer>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+document.querySelectorAll(".hidden").forEach(el => observer.observe(el));
+</script>
+<script src="script.js"></script>
+</body>
+</body>
+</html>
